@@ -9,6 +9,14 @@
   .para1{
     @apply mb-3 text-gray-500 hover:text-gray-900 ease-in-out duration-300;
   }
+  .image{
+    width:250px; 
+    height: 250px;
+    border: 0 solid transparent;
+    object-fit: cover;
+    border-radius: 125px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  }
 }
 
 
