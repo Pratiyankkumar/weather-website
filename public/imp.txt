@@ -1,0 +1,16 @@
+let string = 'Pratiyank';
+let emptyString = '';
+
+function typeWriter(index) {
+  if (index<string.length) {
+    emptyString+=string[index]
+    document.querySelector('#name')
+      .innerHTML = emptyString;
+
+    setTimeout(() => {
+      typeWriter(index+1);
+    },150)
+  }
+}
+
+typeWriter(0);
