@@ -913,8 +913,12 @@ video {
     margin-left: 5rem;
   }
 
-  .md\:mr-12 {
-    margin-right: 3rem;
+  .md\:ml-28 {
+    margin-left: 7rem;
+  }
+
+  .md\:ml-36 {
+    margin-left: 9rem;
   }
 
   .md\:mt-0 {
