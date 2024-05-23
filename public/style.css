@@ -578,10 +578,6 @@ video {
   margin-left: 2.5rem;
 }
 
-.ml-16 {
-  margin-left: 4rem;
-}
-
 .ml-2 {
   margin-left: 0.5rem;
 }
@@ -689,6 +685,10 @@ video {
   width: 3.5rem;
 }
 
+.w-2\/3 {
+  width: 66.666667%;
+}
+
 .w-3\/4 {
   width: 75%;
 }
@@ -723,6 +723,10 @@ video {
 
 .items-center {
   align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
 }
 
 .justify-between {
@@ -877,8 +881,19 @@ video {
   border: 0 solid transparent;
   -o-object-fit: cover;
      object-fit: cover;
-  border-radius: 125px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  animation: animate 5s ease-in-out infinite;
+  transition: all 1s ease-in-out;
+}
+
+@keyframes animate {
+  0%, 100% {
+    border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+  }
+
+  50% {
+    border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+  }
 }
 
 .myshade{
@@ -896,6 +911,10 @@ video {
 
   .md\:ml-20 {
     margin-left: 5rem;
+  }
+
+  .md\:mr-12 {
+    margin-right: 3rem;
   }
 
   .md\:mt-0 {

@@ -14,8 +14,17 @@
     height: 250px;
     border: 0 solid transparent;
     object-fit: cover;
-    border-radius: 125px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+  }
+  @keyframes animate {
+    0%, 100% {
+      border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+    }
+    50% {
+      border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+    }
   }
   .myshade{
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
