@@ -4,7 +4,7 @@
 
 @layer utilities {
   .para{
-    @apply mr-5 text-xl text-gray-500 cursor-pointer hover:text-gray-900 ease-in-out duration-300 text-center;
+    @apply text-xl text-gray-500 cursor-pointer hover:text-gray-900 ease-in-out duration-300;
   }
   .para1{
     @apply mb-3 text-gray-500 hover:text-gray-900 ease-in-out duration-300;

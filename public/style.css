@@ -570,10 +570,6 @@ video {
   margin-left: 0.5rem;
 }
 
-.ml-20 {
-  margin-left: 5rem;
-}
-
 .ml-3 {
   margin-left: 0.75rem;
 }
@@ -818,9 +814,7 @@ video {
 }
 
 .para {
-  margin-right: 1.25rem;
   cursor: pointer;
-  text-align: center;
   font-size: 1.25rem;
   line-height: 1.75rem;
   --tw-text-opacity: 1;
