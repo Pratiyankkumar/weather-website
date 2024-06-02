@@ -46,3 +46,17 @@ burger.addEventListener('click', () => {
 function scrollOnClick(className) {
   document.querySelector(className).scrollIntoView({ behavior: 'smooth' });
 }
+
+document.addEventListener('scroll', () => {
+  let headerElement = document.querySelector('.js-header');
+  let upButtonElement = document.querySelector('.js-up-button')
+
+  let headerRect = headerElement.getBoundingClientRect();
+  let headerInView = headerRect.bottom>0;
+
+  if (headerInView) {
+    upButtonElement.style.display = 'none';
+  } else {
+    upButtonElement.style.display = 'flex';
+  }
+});
