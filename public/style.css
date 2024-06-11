@@ -562,6 +562,10 @@ video {
   margin-left: 0px;
 }
 
+.mt-2 {
+  margin-top: 0.5rem;
+}
+
 .mt-20 {
   margin-top: 5rem;
 }
@@ -581,6 +585,10 @@ video {
 
 .h-10 {
   height: 2.5rem;
+}
+
+.flex-row {
+  flex-direction: row;
 }
 
 .flex-col {
@@ -626,9 +634,22 @@ video {
   padding-left: 1rem;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.text-2xl {
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .text-xl {
   font-size: 1.25rem;
   line-height: 1.75rem;
+}
+
+.font-bold {
+  font-weight: 700;
 }
 
 .text-gray-800 {
@@ -679,9 +700,14 @@ video {
     flex-direction: row;
   }
 
-  .md\:text-3xl {
-    font-size: 1.875rem;
-    line-height: 2.25rem;
+  .md\:text-5xl {
+    font-size: 3rem;
+    line-height: 1;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
   }
 }
 

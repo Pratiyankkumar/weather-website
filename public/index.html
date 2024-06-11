@@ -9,9 +9,12 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
-<body class="bg-gradient-to-r from-slate-700 to-slate-500 flex flex-col 
- justify-center items-center h-100vh m-0" style="font-family: Nunito;">
+<body class="bg-gradient-to-r from-slate-700 to-slate-500 flex flex-col justify-center items-center h-100vh m-0" style="font-family: Nunito;">
 
+  <div class="flex flex-row items-center">
+    <img src="amcharts_weather_icons_1.0.0/static/thunder.svg" alt="">
+    <p class="text-2xl text-white font-bold">Weather App</p>
+  </div>
 
   <div class="flex md:flex-row flex-col mt-20 items-center">
     <input id="cityInput" class="rounded-xl md:w-96 h-10 pl-4 shadow-md" type="text" placeholder="Enter city name">
@@ -20,14 +23,7 @@
   
   
   <div id="js-result" class="flex md:flex-row flex-col items-center"> 
-    <img id="weather-image" class="md:size-96 size-60" src="amcharts_weather_icons_1.0.0/animated/day.svg" alt=""></img>
-    <div class="flex flex-col text-white">
-      <p class="md:text-3xl text-xl" id="temperature"></p>
-      <p id="cityName"></p>
-      <p id="description"></p>
-      <p id="windSpeed"></p>
-      <p id="humidity"></p>
-    </div>
+    
   </div>
 
   
