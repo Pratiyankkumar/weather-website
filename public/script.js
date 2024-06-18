@@ -9,8 +9,8 @@ document.getElementById('searchBtn').addEventListener('click', () => {
 });
 
 function getWeatherData(city) {
-    const apiKey = '22766c7d5b146769724082f826caad1d'; // Your OpenWeatherMap API key
-    const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    const apiKey = 'dddaaa18ca78461fb1d141336241806'; 
+    const apiUrl = `https://api.weatherapi.com/v1/current.json?key=${apiKey}&q=${city}`;
 
     fetch(apiUrl)
         .then(response => {
@@ -21,8 +21,8 @@ function getWeatherData(city) {
         })
         .then(data => { 
             if (data.cod === 200) { 
-                document.getElementById('cityName').innerText = data.name;
-                document.getElementById('temperature').innerText = `Temprature: ${data.main.temp} °C`;
+                document.getElementById('cityName').innerText = data.location.name;
+                document.getElementById('temperature').innerText = `Temprature: ${data.current.temp_c} °C`;
                 if (data.main.temp<=15) {
                     document.querySelector('.js-image-container')
                         .innerHTML = `<img id="weather-image" class="md:size-96 size-60" src="amcharts_weather_icons_1.0.0/animated/snowy-5.svg" alt=""></img>`
@@ -30,9 +30,9 @@ function getWeatherData(city) {
                     document.querySelector('.js-image-container')
                         .innerHTML = `<img id="weather-image" class="md:size-96 size-60" src="amcharts_weather_icons_1.0.0/animated/cloudy-day-1.svg" alt=""></img>`
                 };
-                document.getElementById('description').innerText = `Description: ${data.weather[0].description}`;
-                document.getElementById('windSpeed').innerText = `Wind Speed: ${data.wind.speed} m/s`;
-                document.getElementById('humidity').innerText = `Humidity: ${data.main.humidity}%`;
+                document.getElementById('description').innerText = `Description: ${data.current.condition.text}`;
+                document.getElementById('windSpeed').innerText = `Wind Speed: ${data.current.wind_kph} km/h`;
+                document.getElementById('humidity').innerText = `Humidity: ${data.current.humidity}%`;
             } else {
                 document.getElementById('cityName').innerText = '';
                 document.getElementById('temperature').innerText = '';
